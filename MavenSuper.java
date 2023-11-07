@@ -14,7 +14,7 @@ public class MavenSuper {
         Producto[][] pasillos = new Producto[10][10];
         int contadorProductos = 1;
 
-        while (contadorProductos <= 5) { // Cambia el 5 al número deseado de productos a registrar
+        while (contadorProductos <= 10) { 
             JOptionPane.showMessageDialog(null, "Registro del Producto " + contadorProductos + ":");
 
             String nombre = JOptionPane.showInputDialog("Nombre del producto:");
@@ -54,7 +54,7 @@ public class MavenSuper {
                     "Seleccionar Pasillo", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, obtenerCategorias(), 0);
 
             if (opcion == -1) {
-                break; // El usuario canceló la selección
+                break; 
             }
 
             int categoriaIndex = opcion;
